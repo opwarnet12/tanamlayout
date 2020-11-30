@@ -1,0 +1,354 @@
+<html>
+	<head>
+		<style type="text/css">
+.body{
+	background-color: #f0f0f0;
+	padding:0px;
+	margin:0px;
+	font:15px Arial;
+	color:#393939;
+}
+		
+.header{
+	background-color: #ffffff;
+	width: 100%;
+	height:63px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.11); 
+	box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.11);
+	padding: 0px 55px;
+	box-sizing: border-box;
+}
+		
+.header .header-content {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header .header-content nav {
+	line-height: 63px;
+}
+
+.header .header-content nav a {
+	color:#393939;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 5px;
+	margin-right: 2px;
+	opacity: 0.9;
+}
+
+.header .header-content .header-navigation{
+	float: left;
+}
+
+.header .header-content .header-navigation a{
+	width: 50px;
+}
+
+.header .header-content .header-notification{
+	float: right;
+}
+
+.header .header-content .header-notification a{
+	width: 120px;
+	text-align: center;
+}
+		
+.header .header-content nav a:hover {
+	background-color: #bababa;
+}
+
+.search {
+	margin-top: 25px;
+	margin-left: 55px;
+	margin-right: 55px;
+}
+
+.search table {
+	width: 100%;
+}
+
+.search form .search-group {
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.11);
+}
+
+.search form .search-input {
+	height:63px;
+	width: 1137px;
+	border-radius: 6px 0px 0 6px;
+	border-color: transparent;
+	padding-left: 30px;
+	font-size: 21px;
+	float: left;
+}
+
+.search form .search-button {
+	height:63px;
+	width: 63px;
+	border-radius: 0px 6px 6px 0px;
+	border-color: transparent;
+	font-size: 21px;
+	float: left;
+	background-color: white;
+	text-align: center;
+}
+
+.search .search-user {
+	height:63px;
+}
+
+.search .search-result {
+	margin-top: 6px;
+	width: 100%;
+	display: block;
+}
+
+.search .search-user-pp{
+	height:35px;
+	width: 35px;
+	margin-right: 15px;
+	border-radius: 100%;
+}
+
+.search a{
+	text-decoration: none;
+	float:right;
+}
+
+.search form {
+	display: grid;
+}
+
+.container {
+	margin-right: 120px;
+	margin-left: 120px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px 40px;
+}
+
+.grid-container > div {
+	background-color: #d6ff9c;
+	text-align: center;
+	padding: 70px 0;
+	border-radius: 40px;
+}
+
+.grid-container .item1 {
+	grid-row: 1 / span 2;
+}
+
+.container2 {
+	display: grid;
+	grid-template-columns: auto auto;
+	font-size: 22px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+
+.container2 a {
+	color:#52d51b;
+	text-decoration: none;
+	text-align: right;
+}
+
+.grid-container2 {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto;
+	grid-gap: 30px;
+	margin-top: 25px;
+}
+
+.grid-container2 > div {
+	background-color: white;
+	text-align: center;
+	padding: 90px 0;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.11);
+	border-radius: 40px;
+}
+
+.container3{
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.grid-container3 {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 25px;
+	margin-top: 100px;
+}
+
+.grid-container3 > div {
+	background-color: white;
+	text-align: center;
+	padding: 200px 0;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.11);
+	border-radius: 10px;
+}
+
+.pagination {
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.pagination a {
+  background-color: #dfe6e9;	
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #52d51b;
+  color: white;
+  border-radius: 65px;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.footer {
+	background-color: #d6ff9c;
+	text-align: center;
+	width: 100%;
+	padding: 130px 0;
+	border-radius: 30px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+		</style>
+		<title>Front End</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/9f5c511ebc.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="body">
+		<header class="header">
+			<div class="header-content">
+				<nav class="header-navigation">
+					<a href="isi">
+						Sell
+					</a>
+					<a href="isi">
+						Buy
+					</a>
+				</nav>
+				<nav class="header-notification">
+					<a href="notifikasi">
+						<table height=100%>
+							<td align="center">
+								<!-- <img src="notification.webp" height="20"> -->
+								<i class="far fa-bell"></i>
+							</td>
+							<td align="center">
+								Notification
+							</td>
+						</table>
+					</a>
+				</nav>
+			</div>
+		</header>
+	</body>
+	<div class="search">
+		<table>
+			<td valign="top" width="220">
+				<img height="63px" src="logo.png">
+			</td>
+			<td valign="top" width="1200">
+				<form action="cari">
+					<div class="search-group">
+						<input class="search-input" type="text" name="cari" placeholder="Search here">
+						<button class="search-button" type="submit">
+							<!-- <img src="notification.webp" width="30" height="30"> -->
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+					<div class="search-result">
+						7,617 result found in 5ms
+					</div>
+				</form>
+			</td>
+			<td align="right" valign="top">
+				<a href="user" class="">
+					<table class="search-user">
+						<td align="right">
+							<img class="search-user-pp" src="pp.jpg">
+						</td>
+						<td align="left">
+							Ramadian
+						</td>
+					</table>
+				</a>
+			</td>
+		</table>
+	</div>
+	<div class="container">
+		<div class="grid-container">
+		 	<div class="item1">1</div>
+		 	<div class="item2">2</div>
+		 	<div class="item3">3</div>  
+		</div>
+	</div>
+	<div class="container2">
+		<div>
+			Categories
+		</div>
+		<a href="kategori">
+			See All Categories
+		<a>
+	</div>
+	<div class="container">
+		<div class="grid-container2">
+		 	<div class="item1">1</div>
+		 	<div class="item2">2</div>
+		 	<div class="item3">3</div>
+		 	<div class="item3">4</div>
+		 	<div class="item3">5</div>
+		 	<div class="item3">6</div>
+		 	<div class="item3">7</div>  
+		 	<div class="item3">8</div>
+		 	<div class="item3">9</div>
+		</div>
+	</div>
+	<div class="container3">
+		<div class="grid-container3">
+		 	<div class="item1">1</div>
+		 	<div class="item2">2</div>
+		 	<div class="item3">3</div>
+		 	<div class="item3">4</div>
+		 	<div class="item3">5</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="pagination">
+		  <a href="#"><</a>
+		  <a href="#">1</a>
+		  <a class="active" href="#">2</a>
+		  <a href="#">3</a>
+		  <a href="#">4</a>
+		  <a href="#">5</a>
+		  <a href="#">6</a>
+		  <a href="#">></a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer">
+		</div>
+	</div>
+</a>
+</a>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
